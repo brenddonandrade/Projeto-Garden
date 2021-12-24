@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;500;600;700&family=Finger+Paint&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+:root {
+  --cor-destaque-escuta: #010702;
+  --cor-background-light: #d0fff7;
+  --font-h1: "Finger Paint", cursive;
+  --font-h2: "Baloo Bhaijaan 2", cursive;
+  --font-paragraph: "Ubuntu", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--cor-background-light);
+  height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
+section.max-width {
+  place-content: center;
+  max-width: 1100px;
+}
+
+div#incentivo1 {
+  display: grid;
+  font-size: 48px;
+  justify-items: right;
+  grid-template-rows: 1fr;
+}
+
+h1.intro {
+  font-family: var(--font-h2);
+  text-align: center;
+}
+
+#botao-passa {
+  display: grid;
+  background-color: cadetblue;
+  border: 3px solid var(--cor-destaque-escuta);
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+#botao-passa:hover {
+  background-color: var(--cor-background-light);
+  transition: 0.2s ease;
+}
